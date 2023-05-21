@@ -21,7 +21,7 @@ int main(){
         file.close();
     }
     else 
-        cout<<"\n ERRORE!!! ";
+        cout<<"\n ERROR!!! ";
     
     
     infoStu newStu;
@@ -32,9 +32,9 @@ int main(){
         file.read(reinterpret_cast <char*> (&newStu), sizeof(infoStu));
         file.close();
     }
-    else{
+    else
         cout<<"\n ERROR!!!";
-    }
+    
 
     cout<<"\n The students information : " << endl; 
     cout<<"\n Name --> " << newStu.name;
